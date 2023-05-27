@@ -24,3 +24,12 @@ button {
   margin-right: 20px;
   cursor: pointer;
 }
+
+.cross {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.show {
+  visibility: visible;
+}

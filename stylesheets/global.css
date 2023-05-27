@@ -43,6 +43,10 @@ body {
   color: var(--secondary);
 }
 
+.text-gray-1 {
+  color: var(--gray-1);
+}
+
 /* background colors */
 
 .bg-primary {
@@ -181,8 +185,8 @@ body {
   margin-right: 20px;
 }
 
-/* margin-bottom */
+/* padding-bottom */
 
-.mb-36 {
+.pb-36 {
   margin-bottom: 36px;
 }
