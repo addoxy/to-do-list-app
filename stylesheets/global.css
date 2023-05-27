@@ -19,6 +19,10 @@
   --gray-1: #515151;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--primary);
   padding: 96px 228px 96px 228px;
