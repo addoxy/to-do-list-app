@@ -1,0 +1,188 @@
+/* always included */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* custom variables for colors */
+:root {
+  --primary: #121212;
+  --secondary: #eeeeee;
+  --tertiary: #7f68bf;
+  --gray-1: #515151;
+}
+
+body {
+  background-color: var(--primary);
+  padding: 96px 228px 96px 228px;
+  font-family: "Inter", sans-serif;
+}
+
+/* input {
+  color: var(--secondary);
+  font-family: "Inter", sans-serif;
+  overflow: none;
+} */
+
+/* list styles */
+
+.no-list {
+  list-style-type: none;
+}
+
+/* text colors */
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+/* background colors */
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+/* flex parent properties */
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-ai-fs {
+  align-items: flex-start;
+}
+
+.flex-d-c {
+  flex-direction: column;
+}
+
+/* flex child properties */
+
+.flex-o-1 {
+  order: 1;
+}
+
+.flex-o-2 {
+  order: 2;
+}
+
+.flex-o-3 {
+  order: 3;
+}
+
+.flex-o-4 {
+  order: 4;
+}
+
+/* font sizes */
+
+.font-xs {
+  font-size: 12px;
+}
+
+.font-s {
+  font-size: 16px;
+}
+
+.font-m {
+  font-size: 20px;
+}
+
+.font-xxl {
+  font-size: 72px;
+}
+
+/* line height */
+
+.lh-xs {
+  line-height: 12px;
+}
+
+.lh-s {
+  line-height: 16px;
+}
+
+.lh-m {
+  line-height: 20px;
+}
+
+.lh-l {
+  line-height: 24px;
+}
+
+.lh-xl {
+  line-height: 32px;
+}
+
+.lh-xxl {
+  line-height: 36px;
+}
+
+/* font weights */
+
+.fw-r {
+  font-weight: 400;
+}
+
+.fw-m {
+  font-weight: 500;
+}
+
+.fw-sb {
+  font-weight: 600;
+}
+
+.fw-b {
+  font-weight: 700;
+}
+
+/* heights */
+
+.h-36 {
+  height: 36px;
+}
+
+.h-48 {
+  height: 48px;
+}
+
+.h-96 {
+  height: 96px;
+}
+
+/* text-styles */
+
+.strike {
+  text-decoration: line-through;
+}
+
+/* margin-right */
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+/* margin-bottom */
+
+.mb-36 {
+  margin-bottom: 36px;
+}

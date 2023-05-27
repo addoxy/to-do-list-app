@@ -1,0 +1,26 @@
+.rule {
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: var(--secondary);
+}
+
+textarea {
+  font-family: "Inter", sans-serif;
+  resize: unset;
+  width: 90%;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.box {
+  margin-right: 20px;
+  cursor: pointer;
+}

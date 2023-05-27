@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/global.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/addTodo.js"></script>
+    <script defer src="scripts/check.js"></script>
+  </head>
+  <body class="text-secondary">
+    <header>
+      <div class="date font-xxl fw-m">Date</div>
+      <div class="h-48"></div>
+      <div class="rule"></div>
+      <div class="h-96"></div>
+    </header>
+
+    <!-- to-dos section -->
+    <section>
+      <div class="flex flex-ai-fs mb-36">
+        <img class="box mr-20" src="assets/uncheck.svg" />
+        <textarea
+          class="font-m text-secondary"
+          placeholder="Enter a to-do"
+        ></textarea>
+      </div>
+
+      <button class="mb-20"><img src="assets/add.svg" /></button>
+    </section>
+  </body>
+</html>
