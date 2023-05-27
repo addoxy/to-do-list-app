@@ -2,7 +2,7 @@ const button = document.querySelector("button");
 
 const addTodo = () => {
   const newTodo = document.createElement("div");
-  newTodo.classList.add("todo", "flex", "flex-ai-fs", "pb-36");
+  newTodo.classList.add("todo", "flex", "flex-ai-fs", "pb-36", "flex-jc-sb");
 
   newTodo.innerHTML = ` <img class="box mr-20" src="assets/uncheck.svg" />
                         <textarea class="font-m text-secondary"
