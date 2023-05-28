@@ -20,3 +20,8 @@ addGlobalEventListener("click", ".box", (e) => {
 addGlobalEventListener("click", ".delete", (e) => {
   e.target.parentElement.remove();
 });
+
+// transition for box
+addGlobalEventListener("click", ".box", (e) => {
+  e.target.classList.add("transition");
+});
