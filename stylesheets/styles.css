@@ -30,6 +30,6 @@ button {
   cursor: pointer;
 }
 
-.show {
+.todo:hover .delete {
   visibility: visible;
 }

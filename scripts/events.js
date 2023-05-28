@@ -16,12 +16,6 @@ addGlobalEventListener("click", ".box", (e) => {
   e.target.parentElement.children[1].classList.toggle("text-gray-1");
 });
 
-// hover to show delete
-addGlobalEventListener("mouseover", ".todo", (e) => {
-  e.stopPropagation();
-  e.target.lastElementChild.classList.toggle("show");
-});
-
 // delete
 addGlobalEventListener("click", ".delete", (e) => {
   e.target.parentElement.remove();
