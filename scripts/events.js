@@ -4,6 +4,7 @@ function addGlobalEventListener(type, selector, callback) {
   });
 }
 
+// check, uncheck
 addGlobalEventListener("click", ".box", (e) => {
   const link = e.target.src;
   if (link.includes("uncheck")) {
@@ -16,4 +17,15 @@ addGlobalEventListener("click", ".box", (e) => {
       "text-gray-1"
     );
   }
+});
+
+// hover to show delete
+addGlobalEventListener("mouseover", ".todo", (e) => {
+  e.target.lastElementChild.classList.toggle("show");
+  e.stopPropagation();
+});
+
+// delete
+addGlobalEventListener("click", ".delete", (e) => {
+  e.target.parentElement.remove();
 });
