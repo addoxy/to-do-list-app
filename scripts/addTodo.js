@@ -7,7 +7,7 @@ const addTodo = () => {
   newTodo.innerHTML = ` <img class="box mr-20" src="assets/uncheck.svg" />
                         <textarea class="font-m text-secondary"
                         placeholder="Enter a to-do"></textarea>
-                        <img class="delete cross" src="assets/cross.svg" />`;
+                        <img class="delete" src="assets/cross.svg" />`;
 
   button.insertAdjacentElement("beforebegin", newTodo);
 };
