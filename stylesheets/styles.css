@@ -4,6 +4,10 @@
   border-color: var(--secondary);
 }
 
+.todo {
+  animation: slide 1s ease 0s 1 normal forwards;
+}
+
 textarea {
   font-family: "Inter", sans-serif;
   resize: unset;
@@ -32,4 +36,5 @@ button {
 
 .todo:hover .delete {
   visibility: visible;
+  animation: fade 0.8s ease 0s 1 normal forwards;
 }
