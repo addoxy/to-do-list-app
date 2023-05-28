@@ -4,7 +4,7 @@ function addGlobalEventListener(type, selector, callback) {
   });
 }
 
-// check, uncheck
+// check, uncheck transition
 addGlobalEventListener("click", ".box", (e) => {
   const link = e.target.src;
   if (link.includes("uncheck")) {
@@ -19,9 +19,4 @@ addGlobalEventListener("click", ".box", (e) => {
 // delete
 addGlobalEventListener("click", ".delete", (e) => {
   e.target.parentElement.remove();
-});
-
-// transition for box
-addGlobalEventListener("click", ".box", (e) => {
-  e.target.classList.add("transition");
 });
