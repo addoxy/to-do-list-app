@@ -5,5 +5,6 @@ function addGlobalEventListener(type, selector, callback) {
 }
 
 addGlobalEventListener("mouseover", ".todo", (e) => {
+  e.stopPropagation();
   e.target.lastElementChild.classList.toggle("show");
 });
