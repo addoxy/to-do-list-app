@@ -28,9 +28,11 @@ html {
 }
 
 body {
-  background-color: var(--primary);
-  padding: 96px 228px 96px 228px;
   font-family: "Inter", sans-serif;
+  background-color: var(--primary);
+  max-width: 1600px;
+  margin: auto;
+  padding: 96px 228px 96px 228px;
   animation: fade 1.5s ease 0s 1 normal forwards;
 }
 
