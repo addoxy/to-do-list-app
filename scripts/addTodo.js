@@ -12,6 +12,8 @@ const addTodo = () => {
                         <img class="delete" src="assets/cross.svg" />`;
 
   button.insertAdjacentElement("beforebegin", newTodo);
+
+  saveTodo(newTodo.id, "", newTodo.dataset.checked);
 };
 
 button.addEventListener("click", addTodo);
