@@ -13,12 +13,15 @@ function loadTodos() {
     for (let i = 0; i < listOfTodos.length; i++) {
       const newTodo = document.createElement("div");
       newTodo.classList.add("todo", "flex", "ai-fs", "pb-36", "jc-sb");
+      newTodo.id = listOfTodos[i].key;
 
       if (listOfTodos[i].isChecked) {
-        newTodo.innerHTML = `<img class="box mr-20" src="assets/check.svg" />
+        newTodo.innerHTML = `<img class="box mr-20" src="assets/checked.svg" />
                              <textarea class="font-m text-secondary"
                              placeholder="Enter a to-do"></textarea>
                              <img class="delete" src="assets/cross.svg" />`;
+        newTodo.children[1].classList.add("strike");
+        newTodo.children[1].classList.add("text-gray-1");
       } else {
         newTodo.innerHTML = `<img class="box mr-20" src="assets/uncheck.svg" />
                              <textarea class="font-m text-secondary"
@@ -54,13 +57,13 @@ function saveTodo(id, eValue, check) {
 addGlobalEventListener("click", ".box", (e) => {
   const link = e.target.src;
   if (link.includes("uncheck")) {
-    e.target.src = "assets/check.svg";
+    e.target.src = "assets/checked.svg";
     saveTodo(
       e.target.parentElement.id,
       e.target.parentElement.children[1].value,
       true
     );
-  } else if (link.includes("check")) {
+  } else if (link.includes("checked")) {
     e.target.src = "assets/uncheck.svg";
     saveTodo(
       e.target.parentElement.id,
@@ -75,11 +78,17 @@ addGlobalEventListener("click", ".box", (e) => {
 
 // delete
 addGlobalEventListener("click", ".delete", (e) => {
+  let index = 0;
+
+  for (let i = 0; i < listOfTodos.length; i++) {
+    if (listOfTodos[i].key === e.target.parentElement.id) {
+      index = i;
+      break;
+    }
+  }
+
+  listOfTodos.splice(index, 1);
   e.target.parentElement.remove();
-  listOfTodos.splice(
-    listOfTodos.findIndex((id) => id === e.target.parentElement.id),
-    1
-  );
   localStorage.setItem("list-of-todos", JSON.stringify(listOfTodos));
 });
 
