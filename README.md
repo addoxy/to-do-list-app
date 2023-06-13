@@ -1,2 +1,1 @@
-# to-do-list-app
-This is a simple to-do list app where you can add, delete, check and uncheck your todos. It is built using HTML, CSS and Javascript.
+This is a simple to-do list site where you can add, delete, check and uncheck your todos. Your todos are stored in the local storage of your browser, hence they stay even on reloading or reopening the page. This site is built using HTML, CSS and Javascript.
